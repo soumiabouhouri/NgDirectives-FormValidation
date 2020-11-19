@@ -1,0 +1,37 @@
+<p>author works!</p>
+
+<h2> {{authors.length}} </h2>
+
+ <ul>
+  <li  *ngFor="let author of authors "> {{author.name}}  {{author.id}}
+    <button (click)="RemoveObject(author)">Remove Author</button>
+    <button (click)="UpdateObject(author)">update Author</button>
+  </li>
+
+</ul>
+
+<button (click)="AddObject()">Add Author</button>
+<br>
+<zippy>
+  helloe
+</zippy>
+<zippy>
+  helloe
+</zippy>
+
+
+
+
+
+
+
+
+
+
+<br>
+<br>
+<button (click)="onSave($event)"> click me</button>
+<input  />
+
+
+<input [(ngModel)]="authors"  (keyup.enter)="onKeyUp()"/>

@@ -1,0 +1,9 @@
+<p>drop-down works!</p>
+
+<div class="from-group">
+
+  <label for="contactMethod"> contactMethod </label>
+  <select ngModel="contactMethod" class="form-control" id="contactMethod" name="">
+    <option *ngFor="let method of contactMethod" [ngValue]="method"> {{ method.name}}</option>
+  </select>
+</div>

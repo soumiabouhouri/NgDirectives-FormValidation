@@ -1,0 +1,21 @@
+<p>course works!</p>
+
+<div class="container">
+
+        <ul>
+          <li *ngFor=" let course of courses"> {{course}}</li>
+        </ul>
+
+        <button (click)="onSave()"> Course Me</button>
+        <input [(ngModel)]="courses"  (keyup.enter)="onKeyUp()"/>
+
+</div>
+<div class="alert alert-primary" role="alert">
+  A simple primary alert—check it out!
+</div>
+
+
+<div *ngIf="courses.length>0; then CourseList else NoCourses ">
+  <ng-template #CourseList> courses list </ng-template>
+  <ng-template #NoCourses> courses list </ng-template>
+</div>

@@ -1,0 +1,30 @@
+
+<form #form="ngForm" (ngSubmit)="submit(form)">
+
+  <div ngModelGroup="contact">
+   first Name <input  ngModel type="text">
+   last Name <input  ngModel type="text">
+    <div *ngIf="!contact.valid">
+        here we display error msg
+    </div>
+  </div>
+
+  <div class="form-group">
+  <label for="FirstName">FirstName </label>
+  <input required ngModel name="FirstName" #FirstName="ngModel" id="FirstName" type="text" class="form-control">
+  <div class="alert alert-danger" *ngIf="FirstName.touched && !FirstName.valid">
+    your firstname is invalid
+  </div>
+  </div>
+
+
+
+  <div class="form-group">
+    <label for="comment"> Comment</label>
+    <textarea name="comment" id="comment" cols="30" rows="10"></textarea>
+  </div>
+  <button class="btn btn-primary">
+    submit
+  </button>
+</form>
+

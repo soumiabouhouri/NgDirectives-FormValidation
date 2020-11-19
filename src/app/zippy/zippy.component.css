@@ -1,0 +1,26 @@
+.zippy{
+  border: 5px, solid, #ccc;
+  border-radius: 2px;
+  width: 500px;
+}
+.zippy-heading{
+  font-weight: bold;
+  padding: 20px;
+  cursor: pointer;
+}
+.zippy-body{
+  padding: 20px;
+  cursor: pointer;
+  background: #f1f111;
+}
+.expanded{
+  background: #f0f0f0;
+  border: 5px, solid, #ccc;
+  border-radius: 2px;
+}
+.glyphicon{
+  float: right;
+}
+.glyphicon-heart{
+  color:pink
+}
